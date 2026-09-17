@@ -197,22 +197,33 @@
 
         /* PROJECTS */
 
-.projects {
-    background: white;
-}
+        .projects {
+            background: white;
+        }
 
-.projects .service-card {
-    border: 1px solid #e2e8f0;
-}
+        .projects .service-card {
+            border: 1px solid #e2e8f0;
+        }
 
-.projects .service-card h3 {
-    font-size: 23px;
-}
+        .projects .service-card h3 {
+            font-size: 23px;
+        }
 
-.projects .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.12);
-}
+        .projects .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(15, 23, 42, 0.12);
+        }
+
+        .project-tag {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 6px 12px;
+            background: #eff6ff;
+            color: #2563eb;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+        }
 
         /* CONTACT */
 
@@ -220,15 +231,46 @@
             background: #f8fafc;
         }
 
+        .contact-form {
+            max-width: 650px;
+            margin: 40px auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #2563eb;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+
         .contact-button {
             display: inline-block;
-            margin-top: 30px;
+            margin-top: 5px;
             background: #2563eb;
             color: white;
             padding: 15px 32px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
         }
 
         .contact-button:hover {
@@ -541,6 +583,10 @@
                     Business Website
                 </h3>
 
+                <span class="project-tag">
+                    Web Development
+                </span>
+
                 <p>
                     Modern and responsive websites that help businesses
                     establish a professional online presence.
@@ -559,6 +605,10 @@
                     AI Automation
                 </h3>
 
+                <span class="project-tag">
+                    AI &amp; Automation
+                </span>
+
                 <p>
                     Smart automation solutions designed to help businesses
                     save time and improve everyday operations.
@@ -576,6 +626,10 @@
                 <h3>
                     Data Dashboard
                 </h3>
+
+                <span class="project-tag">
+                    Data Analytics
+                </span>
 
                 <p>
                     Organized dashboards and reports that turn business data
@@ -599,12 +653,37 @@
 
         <p class="section-intro">
             Ready to take your business to the next level?
-            Get in touch with NovaTech Solutions today.
+            Send us a message and let's discuss your project.
         </p>
 
-        <a href="mailto:contact@novatechsolutions.com" class="contact-button">
-            Contact Us
-        </a>
+        <form action="https://formspree.io/f/xjyvnrnp" method="POST" class="contact-form">
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                name="message"
+                placeholder="Your Message"
+                rows="6"
+                required
+            ></textarea>
+
+            <button type="submit" class="contact-button">
+                Send Message
+            </button>
+
+        </form>
 
     </section>
 
@@ -628,4 +707,4 @@
     </footer>
 
 </body>
-                </html>
+    </html>
