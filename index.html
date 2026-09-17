@@ -183,6 +183,7 @@
             width: 280px;
             padding: 30px;
             border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
         }
 
         .reason h3 {
@@ -194,10 +195,16 @@
             color: #64748b;
         }
 
+        /* PROJECTS */
+
+        .projects {
+            background: white;
+        }
+
         /* CONTACT */
 
         .contact {
-            background: white;
+            background: #f8fafc;
         }
 
         .contact-button {
@@ -261,6 +268,16 @@
             .section h2 {
                 font-size: 30px;
             }
+
+            .service-card {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            .reason {
+                width: 100%;
+                max-width: 350px;
+            }
         }
     </style>
 </head>
@@ -276,11 +293,11 @@
         </div>
 
         <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
 
     </header>
@@ -296,7 +313,7 @@
 
         <p>
             We help modern businesses grow through professional websites,
-            AI technology, digital solutions, and data services.
+            digital solutions, AI technology, and data services.
         </p>
 
         <a href="#services" class="button">
@@ -347,9 +364,7 @@
             more efficiently.
         </p>
 
-
         <div class="services">
-
 
             <div class="service-card">
 
@@ -405,146 +420,52 @@
             </div>
 
 
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ⚙️
+                </div>
+
+                <h3>
+                    Digital Solutions
+                </h3>
+
+                <p>
+                    Practical digital tools and solutions that help businesses
+                    improve productivity and efficiency.
+                </p>
+
+            </div>
+
         </div>
 
     </section>
 
 
-    <<!-- WHY CHOOSE US -->
+    <!-- WHY CHOOSE US -->
 
-<section class="section why-us">
-
-    <h2>Why Choose Us</h2>
-
-    <p class="section-intro">
-        We combine modern technology, creative solutions,
-        and reliable service to help businesses grow.
-    </p>
-
-    <div class="services-container">
-
-        <div class="service-card">
-            <h3>🚀 Modern Solutions</h3>
-            <p>
-                We use modern digital tools and technologies
-                to create practical solutions for businesses.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <h3>💡 Creative Approach</h3>
-            <p>
-                We develop creative ideas that help businesses
-                stand out in today's digital world.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <h3>🤝 Reliable Service</h3>
-            <p>
-                We focus on delivering dependable digital
-                solutions that meet our clients' needs.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- PROJECTS -->
-
-<section class="section projects" id="projects">
-
-    <h2>
-        Our Projects
-    </h2>
-
-    <p class="section-intro">
-        Explore some of the digital solutions we can create
-        for modern businesses.
-    </p>
-
-    <div class="services">
-
-        <div class="service-card">
-
-            <div class="service-icon">
-                🌐
-            </div>
-
-            <h3>
-                Business Website
-            </h3>
-
-            <p>
-                Modern and responsive websites that help businesses
-                establish a professional online presence.
-            </p>
-
-        </div>
-
-
-        <div class="service-card">
-
-            <div class="service-icon">
-                🤖
-            </div>
-
-            <h3>
-                AI Automation
-            </h3>
-
-            <p>
-                Smart automation solutions designed to help businesses
-                save time and improve everyday operations.
-            </p>
-
-        </div>
-
-
-        <div class="service-card">
-
-            <div class="service-icon">
-                📊
-            </div>
-
-            <h3>
-                Data Dashboard
-            </h3>
-
-            <p>
-                Organized dashboards and reports that turn business data
-                into useful information.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
+    <section class="section why-us">
 
         <h2>
-            Why Work With Us?
+            Why Choose Us
         </h2>
 
         <p class="section-intro">
-            We focus on practical digital solutions that help businesses
-            build a stronger online presence.
+            We combine modern technology, creative solutions,
+            and reliable service to help businesses grow.
         </p>
 
-
         <div class="reasons">
-
 
             <div class="reason">
 
                 <h3>
-                    Modern Solutions
+                    🚀 Modern Solutions
                 </h3>
 
                 <p>
                     We use modern digital tools and technologies to create
-                    useful business solutions.
+                    practical solutions for businesses.
                 </p>
 
             </div>
@@ -553,12 +474,12 @@
             <div class="reason">
 
                 <h3>
-                    Business Focused
+                    💡 Creative Approach
                 </h3>
 
                 <p>
-                    Our solutions are designed around real business needs
-                    and customer experiences.
+                    We develop creative ideas that help businesses stand out
+                    in today's digital world.
                 </p>
 
             </div>
@@ -567,16 +488,88 @@
             <div class="reason">
 
                 <h3>
-                    Professional Approach
+                    🤝 Reliable Service
                 </h3>
 
                 <p>
-                    We aim to deliver clean, reliable, and professional
-                    digital experiences.
+                    We focus on delivering dependable digital solutions
+                    that meet our clients' needs.
                 </p>
 
             </div>
 
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section class="section projects" id="projects">
+
+        <h2>
+            Our Projects
+        </h2>
+
+        <p class="section-intro">
+            Explore some of the digital solutions we can create
+            for modern businesses.
+        </p>
+
+        <div class="services">
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🌐
+                </div>
+
+                <h3>
+                    Business Website
+                </h3>
+
+                <p>
+                    Modern and responsive websites that help businesses
+                    establish a professional online presence.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🤖
+                </div>
+
+                <h3>
+                    AI Automation
+                </h3>
+
+                <p>
+                    Smart automation solutions designed to help businesses
+                    save time and improve everyday operations.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📊
+                </div>
+
+                <h3>
+                    Data Dashboard
+                </h3>
+
+                <p>
+                    Organized dashboards and reports that turn business data
+                    into useful information.
+                </p>
+
+            </div>
 
         </div>
 
@@ -622,4 +615,4 @@
     </footer>
 
 </body>
-</html>
+                </html>
