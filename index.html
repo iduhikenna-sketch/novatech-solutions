@@ -1,65 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>NovaTech Solutions | Digital Innovation</title>
-
-    <meta name="description"
-        content="NovaTech Solutions provides professional web design, AI solutions, data services, and digital solutions for modern businesses.">
+    <title>NovaTech Solutions - Official Website</title>
 
     <style>
-
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
         }
 
         body {
             font-family: Arial, sans-serif;
-            background: #f8fafc;
-            color: #1e293b;
+            background-color: #f5f7fa;
+            color: #1f2937;
             line-height: 1.6;
         }
 
-        /* HEADER */
-
         header {
-            background: #0f172a;
+            background-color: #111827;
             color: white;
-            padding: 18px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            padding: 20px 8%;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
 
         .logo {
-            font-size: 25px;
+            font-size: 28px;
             font-weight: bold;
         }
 
-        .logo small {
-            display: block;
-            font-size: 11px;
-            font-weight: normal;
-            color: #94a3b8;
-            margin-top: 2px;
+        nav {
+            margin-top: 15px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin-left: 25px;
+            margin-right: 20px;
             font-weight: bold;
         }
 
@@ -67,409 +48,240 @@
             color: #60a5fa;
         }
 
-        /* HERO */
-
         .hero {
-            background: linear-gradient(135deg, #1d4ed8, #2563eb);
+            background-color: #2563eb;
             color: white;
             text-align: center;
-            padding: 110px 20px;
+            padding: 90px 20px;
         }
 
         .hero h1 {
-            font-size: 52px;
-            max-width: 900px;
-            margin: auto;
+            font-size: 48px;
             margin-bottom: 20px;
         }
 
         .hero p {
             font-size: 20px;
-            max-width: 750px;
-            margin: auto;
-            margin-bottom: 35px;
+            max-width: 700px;
+            margin: 0 auto 30px;
         }
 
         .button {
             display: inline-block;
-            background: white;
-            color: #1d4ed8;
-            padding: 15px 30px;
+            background-color: white;
+            color: #2563eb;
+            padding: 14px 28px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
         }
 
         .button:hover {
-            background: #e2e8f0;
+            background-color: #e5e7eb;
         }
 
-        /* GENERAL SECTIONS */
-
         .section {
-            padding: 80px 7%;
+            padding: 70px 8%;
             text-align: center;
         }
 
         .section h2 {
-            font-size: 36px;
-            color: #0f172a;
-            margin-bottom: 18px;
+            font-size: 34px;
+            margin-bottom: 10px;
+            color: #111827;
         }
 
-        .section-intro {
+        .section-subtitle {
             max-width: 750px;
-            margin: auto;
+            margin: 0 auto 40px;
+            color: #6b7280;
             font-size: 18px;
-            color: #475569;
         }
-
-        /* ABOUT */
-
-        .about {
-            background: white;
-        }
-
-        .about-content {
-            max-width: 850px;
-            margin: 35px auto 0;
-            font-size: 18px;
-            color: #475569;
-        }
-
-        .about-content p {
-            margin-bottom: 18px;
-        }
-
-        /* MISSION & VISION */
-
-        .mission-vision {
-            background: #f8fafc;
-        }
-
-        /* SERVICES */
 
         .services {
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
+            justify-content: center;
             gap: 25px;
-            margin-top: 45px;
+            margin-top: 40px;
         }
 
         .service-card {
-            background: white;
-            width: 300px;
-            padding: 35px 25px;
-            border-radius: 14px;
-            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
-            transition: transform 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-8px);
-        }
-
-        .service-icon {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
-
-        .service-card h3 {
-            font-size: 22px;
-            color: #1d4ed8;
-            margin-bottom: 12px;
-        }
-
-        .service-card p {
-            color: #64748b;
-        }
-
-        /* HOW WE WORK */
-
-        .how-we-work {
-            background: white;
-        }
-
-        .how-we-work .reason {
-            border: 1px solid #e2e8f0;
-        }
-
-        .how-we-work .reason h3 {
-            color: #2563eb;
-        }
-
-        /* WHY CHOOSE US */
-
-        .why-us {
-            background: #eff6ff;
-        }
-
-        .reasons {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 25px;
-            margin-top: 45px;
-        }
-
-        .reason {
-            background: white;
-            width: 280px;
+            background-color: white;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
-        }
-
-        .reason h3 {
-            margin-bottom: 10px;
-            color: #0f172a;
-        }
-
-        .reason p {
-            color: #64748b;
-        }
-
-        /* PROJECTS */
-
-        .projects {
-            background: white;
-        }
-
-        .projects .service-card {
-            border: 1px solid #e2e8f0;
-        }
-
-        .projects .service-card h3 {
-            font-size: 23px;
-        }
-
-        .projects .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(15, 23, 42, 0.12);
-        }
-
-        .project-tag {
-            display: inline-block;
-            margin-bottom: 15px;
-            padding: 6px 12px;
-            background: #eff6ff;
-            color: #2563eb;
-            border-radius: 20px;
-            font-size: 13px;
-            font-weight: bold;
-        }
-
-        /* FAQ */
-
-        .faq {
-            background: #f8fafc;
-        }
-
-        .faq-container {
-            max-width: 850px;
-            margin: 40px auto 0;
+            width: 280px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
             text-align: left;
         }
 
-        .faq-item {
-            background: white;
-            padding: 25px;
-            margin-bottom: 18px;
-            border-radius: 12px;
-            border: 1px solid #e2e8f0;
+        .service-card h3 {
+            color: #2563eb;
+            margin-bottom: 12px;
         }
 
-        .faq-item h3 {
-            color: #1d4ed8;
-            margin-bottom: 10px;
+        /* PORTFOLIO */
+
+        .portfolio-section {
+            background: #fff;
+            padding: 70px 8%;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(300px, 1fr)
+            );
+            gap: 30px;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .portfolio-card {
+            background: #f9fafb;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+            border: 1px solid #e5e7eb;
+        }
+
+        .portfolio-img {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .portfolio-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .portfolio-content {
+            padding: 25px;
+        }
+
+        .portfolio-content h3 {
+            color: #111827;
+            margin-bottom: 8px;
             font-size: 20px;
         }
 
-        .faq-item p {
-            color: #64748b;
-        }
-
-        /* CALL TO ACTION */
-
-        .cta {
-            background: #0f172a;
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
-
-        .cta h2 {
-            font-size: 36px;
-            margin-bottom: 15px;
-        }
-
-        .cta p {
-            font-size: 18px;
-            margin-bottom: 30px;
-            color: #cbd5e1;
-        }
-
-        .cta-button {
+        .badge {
             display: inline-block;
-            background: #2563eb;
-            color: white;
-            padding: 15px 30px;
-            border-radius: 8px;
-            text-decoration: none;
+            background: #dbeafe;
+            color: #1d4ed8;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
             font-weight: bold;
+            margin-bottom: 12px;
         }
 
-        .cta-button:hover {
-            background: #1d4ed8;
+        .badge.green {
+            background: #dcfce7;
+            color: #15803d;
+        }
+
+        .badge.orange {
+            background: #ffedd5;
+            color: #c2410c;
+        }
+
+        .badge.purple {
+            background: #f3e8ff;
+            color: #7e22ce;
+        }
+
+        .portfolio-content p {
+            font-size: 15px;
+            color: #4b5563;
+            margin-bottom: 12px;
+        }
+
+        .portfolio-meta {
+            font-size: 13px;
+            color: #6b7280;
+            margin-bottom: 12px;
+        }
+
+        .portfolio-meta strong {
+            color: #111827;
+        }
+
+        .portfolio-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #2563eb;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .portfolio-link:hover {
+            text-decoration: underline;
+        }
+
+        .category-title {
+            margin: 50px 0 20px;
+            font-size: 26px;
+            color: #111827;
+            text-align: left;
+            border-left: 5px solid #2563eb;
+            padding-left: 15px;
         }
 
         /* CONTACT */
 
-        .contact {
-            background: #f8fafc;
-        }
-
-        .contact-form {
-            max-width: 650px;
-            margin: 40px auto 0;
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 15px;
-            border: 1px solid #cbd5e1;
-            border-radius: 8px;
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            outline: none;
-        }
-
-        .contact-form input:focus,
-        .contact-form textarea:focus {
-            border-color: #2563eb;
-        }
-
-        .contact-form textarea {
-            resize: vertical;
-        }
-
-        .contact-button {
-            display: inline-block;
-            margin-top: 5px;
-            background: #2563eb;
-            color: white;
-            padding: 15px 32px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .contact-button:hover {
-            background: #1d4ed8;
-        }
-
-        /* BUSINESS INFORMATION */
-
-        .business-info {
-            max-width: 650px;
-            margin: 35px auto 0;
-            padding: 25px;
-            background: white;
-            border-radius: 12px;
-            text-align: left;
-            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
-        }
-
-        .business-info h3 {
-            color: #0f172a;
-            margin-bottom: 15px;
-            font-size: 22px;
-        }
-
-        .business-info p {
-            color: #475569;
-            margin: 8px 0;
+        #contact {
+            background: #eef2ff;
         }
 
         /* FOOTER */
 
         footer {
-            background: #0f172a;
+            background-color: #111827;
             color: white;
             text-align: center;
-            padding: 35px 20px;
+            padding: 30px;
+            margin-top: 0;
         }
 
-        footer p {
-            margin: 6px 0;
-        }
-
-        /* MOBILE */
+        /* MOBILE RESPONSIVE */
 
         @media (max-width: 700px) {
 
-            header {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav a {
-                margin: 0 8px;
-                font-size: 14px;
-            }
-
-            .hero {
-                padding: 80px 20px;
-            }
-
             .hero h1 {
-                font-size: 38px;
+                font-size: 36px;
             }
 
             .hero p {
                 font-size: 18px;
             }
 
-            .section {
-                padding: 60px 20px;
-            }
-
-            .section h2 {
-                font-size: 30px;
-            }
-
-            .service-card {
-                width: 100%;
-                max-width: 350px;
-            }
-
-            .reason {
-                width: 100%;
-                max-width: 350px;
-            }
-
-            .logo {
-                text-align: center;
-            }
-
-            nav {
-                text-align: center;
-            }
-
             nav a {
                 display: inline-block;
-                margin: 5px 6px;
+                margin-bottom: 10px;
+                margin-right: 12px;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-section {
+                padding: 50px 5%;
+            }
+
+            .section {
+                padding: 50px 5%;
+            }
+
+            .category-title {
+                font-size: 23px;
             }
         }
-
     </style>
 </head>
 
@@ -478,36 +290,31 @@
     <!-- HEADER -->
 
     <header>
-
-        <div class="logo">
-            <div>NovaTech Solutions</div>
-            <small>Digital Solutions for Modern Businesses</small>
-        </div>
+        <div class="logo">NovaTech Solutions</div>
 
         <nav>
-            <a href="#home">Home</a>
+            <a href="index.html">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
+            <a href="#work">Our Work</a>
             <a href="#contact">Contact</a>
         </nav>
-
     </header>
 
 
     <!-- HERO -->
 
-    <section class="hero" id="home">
+    <section class="hero">
 
-        <h1>Powering Businesses With Digital Innovation</h1>
+        <h1>Powering Businesses With Digital Solutions</h1>
 
         <p>
-            We help businesses grow with professional websites,
-            AI-powered solutions, data services, and modern digital technology.
+            We help modern businesses grow through professional websites,
+            digital solutions, AI technology, and data services.
         </p>
 
-        <a href="#services" class="button">
-            Explore Our Services
+        <a href="#work" class="button">
+            View Our Work
         </a>
 
     </section>
@@ -515,71 +322,15 @@
 
     <!-- ABOUT -->
 
-    <section class="section about" id="about">
+    <section class="section" id="about">
 
         <h2>About NovaTech Solutions</h2>
 
-        <p class="section-intro">
-            Technology solutions designed to help businesses grow.
+        <p>
+            NovaTech Solutions is a modern digital company focused on helping
+            businesses use technology to improve their online presence,
+            productivity, and customer experience.
         </p>
-
-        <div class="about-content">
-
-            <p>
-                NovaTech Solutions is a digital technology company focused on
-                helping businesses build a stronger online presence and work
-                smarter through modern technology.
-            </p>
-
-            <p>
-                We provide professional website development, AI-powered
-                solutions, data services, and digital solutions designed to
-                improve efficiency, strengthen customer experiences, and
-                support business growth.
-            </p>
-
-            <p>
-                Our goal is to make technology practical, accessible, and
-                valuable for businesses of different sizes.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- MISSION & VISION -->
-
-    <section class="section mission-vision">
-
-        <h2>Our Mission & Vision</h2>
-
-        <div class="reasons">
-
-            <div class="reason">
-
-                <h3>Our Mission</h3>
-
-                <p>
-                    To provide practical and innovative digital solutions
-                    that help businesses improve, grow, and serve their
-                    customers more effectively.
-                </p>
-
-            </div>
-
-            <div class="reason">
-
-                <h3>Our Vision</h3>
-
-                <p>
-                    To become a trusted technology partner for businesses
-                    seeking modern digital solutions and sustainable growth.
-                </p>
-
-            </div>
-
-        </div>
 
     </section>
 
@@ -590,69 +341,39 @@
 
         <h2>Our Services</h2>
 
-        <p class="section-intro">
-            Practical digital solutions designed for modern businesses.
+        <p class="section-subtitle">
+            What we do best to help businesses grow
         </p>
 
         <div class="services">
 
             <div class="service-card">
-
-                <div class="service-icon">💻</div>
-
                 <h3>Web Design</h3>
 
                 <p>
-                    We create modern, responsive, and professional websites
-                    that help businesses build a strong online presence,
-                    attract customers, and grow their brand.
+                    Professional and responsive websites designed for
+                    businesses and organizations.
                 </p>
-
             </div>
 
 
             <div class="service-card">
-
-                <div class="service-icon">🤖</div>
-
                 <h3>AI Solutions</h3>
 
                 <p>
-                    We help businesses use artificial intelligence and
-                    automation to streamline tasks, improve productivity,
-                    and create smarter digital experiences.
+                    Practical AI and automation solutions that help
+                    businesses work smarter.
                 </p>
-
             </div>
 
 
             <div class="service-card">
-
-                <div class="service-icon">📊</div>
-
                 <h3>Data Services</h3>
 
                 <p>
-                    We turn business data into useful insights through
-                    data organization, analysis, reporting, and clear
-                    dashboards that support better decision-making.
+                    Data organization, Excel solutions, reports,
+                    and business insights.
                 </p>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <div class="service-icon">⚙️</div>
-
-                <h3>Digital Solutions</h3>
-
-                <p>
-                    We provide practical digital solutions that help
-                    businesses improve their online operations, customer
-                    experience, and overall digital presence.
-                </p>
-
             </div>
 
         </div>
@@ -660,318 +381,778 @@
     </section>
 
 
-    <!-- HOW WE WORK -->
+    <!-- OUR WORK / PORTFOLIO -->
 
-    <section class="section how-we-work">
+    <section class="portfolio-section" id="work">
 
-        <h2>How We Work</h2>
+        <h2 style="text-align:center;font-size:34px;">
+            Our Work / Portfolio
+        </h2>
 
-        <p class="section-intro">
-            A simple approach designed to turn your ideas into practical digital solutions.
+        <p class="section-subtitle" style="text-align:center;">
+            Explore our web design, data analysis, trading education,
+            and digital solution projects.
         </p>
 
-        <div class="reasons">
 
-            <div class="reason">
+        <!-- WEB DESIGN PROJECTS -->
 
-                <h3>1. Tell Us Your Needs</h3>
+        <h3 class="category-title">
+            1. Web Design Projects
+        </h3>
 
-                <p>
-                    Share your business goals, challenges, or project requirements with us.
-                </p>
+        <div class="portfolio-grid">
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="portfolio-card">
+
+                <div class="portfolio-img">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+                        alt="Professional website design on a laptop"
+                    >
+
+                </div>
+
+                <div class="portfolio-content">
+
+                    <span class="badge">
+                        LIVE PROJECT
+                    </span>
+
+                    <h3>
+                        NovaTech Solutions Website
+                    </h3>
+
+                    <p>
+                        A professional business website designed to present
+                        digital services, showcase projects and provide an
+                        easy way for customers to make contact.
+                    </p>
+
+                    <div class="portfolio-meta">
+                        <strong>Tools:</strong>
+                        HTML5, CSS3, Responsive Web Design
+                    </div>
+
+                    <a href="#"
+                       class="portfolio-link">
+                        🔗 You are viewing this website →
+                    </a>
+
+                </div>
 
             </div>
 
 
-            <div class="reason">
+            <!-- PROJECT 2 -->
 
-                <h3>2. We Plan the Solution</h3>
+            <div class="portfolio-card">
 
-                <p>
-                    We identify a practical digital approach based on your needs and goals.
-                </p>
+                <div class="portfolio-img">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=900&q=80"
+                        alt="Responsive personal portfolio website"
+                    >
+
+                </div>
+
+                <div class="portfolio-content">
+
+                    <span class="badge">
+                        LIVE PROJECT
+                    </span>
+
+                    <h3>
+                        Ikenna Personal Portfolio
+                    </h3>
+
+                    <p>
+                        A responsive personal website created to showcase
+                        professional information, skills, experience and
+                        contact information.
+                    </p>
+
+                    <div class="portfolio-meta">
+                        <strong>Tools:</strong>
+                        HTML5, CSS3, GitHub Pages
+                    </div>
+
+                    <a
+                        href="https://iduhikenna-sketch.github.io/"
+                        target="_blank"
+                        class="portfolio-link"
+                    >
+                        🔗 View Live Website →
+                    </a>
+
+                </div>
 
             </div>
 
 
-            <div class="reason">
+            <!-- PROJECT 3 -->
 
-                <h3>3. We Build & Deliver</h3>
+            <div class="portfolio-card">
 
-                <p>
-                    We develop the solution and help you move forward with confidence.
-                </p>
+                <div class="portfolio-img">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80"
+                        alt="E-commerce website concept"
+                    >
+
+                </div>
+
+                <div class="portfolio-content">
+
+                    <span class="badge green">
+                        DEMO PROJECT
+                    </span>
+
+                    <h3>
+                        Online Store Website
+                    </h3>
+
+                    <p>
+                        A sample e-commerce website concept designed to
+                        demonstrate product presentation, responsive layout
+                        and a modern customer shopping experience.
+                    </p>
+
+                    <div class="portfolio-meta">
+                        <strong>Tools:</strong>
+                        HTML, CSS, CSS Grid, Responsive Design
+                    </div>
+
+                    <span class="portfolio-link">
+                        🚧 Demo project — preview coming soon
+                    </span>
+
+                </div>
 
             </div>
 
         </div>
 
-    </section>
+
+        <!-- DATA ANALYSIS PROJECTS -->
+
+        <h3 class="category-title">
+            2. Data Analysis Projects
+        </h3>
+
+        <div class="portfolio-grid">
 
 
-    <!-- WHY CHOOSE US -->
+            <!-- DATA PROJECT 1 -->
 
-    <section class="section why-us">
+            <div class="portfolio-card">
 
-        <h2>Why Choose NovaTech?</h2>
+                <div class="portfolio-img">
 
-        <p class="section-intro">
-            Technology and digital solutions focused on practical business needs.
-        </p>
+                    <img
+                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
+                        alt="Sales data analysis dashboard"
+                    >
 
-        <div class="reasons">
+                </div>
 
-            <div class="reason">
+                <div class="portfolio-content">
 
-                <h3>Modern Solutions</h3>
+                    <span class="badge purple">
+                        LEARNING PROJECT
+                    </span>
 
-                <p>
-                    We use modern web, AI, data, and digital technologies
-                    to create practical solutions that meet today's
-                    business needs.
-                </p>
+                    <h3>
+                        Sales Performance Analysis
+                    </h3>
 
-            </div>
+                    <p>
+                        <strong>Problem Statement:</strong>
+                        A small business needs a simple way to understand
+                        its sales performance and identify products and
+                        locations generating the most revenue.
+                    </p>
 
+                    <p>
+                        <strong>Project Overview:</strong>
+                        Sales data was organized and analyzed to identify
+                        sales patterns, top-performing products and
+                        differences in performance across locations.
+                    </p>
 
-            <div class="reason">
+                    <div class="portfolio-meta">
+                        <strong>Tools:</strong>
+                        Microsoft Excel, Data Cleaning, Excel Tables,
+                        Formulas, Pivot Tables and Charts
+                    </div>
 
-                <h3>Creative Approach</h3>
+                    <p>
+                        <strong>Key Insight:</strong>
+                        The analysis provides a clearer view of sales
+                        performance and demonstrates how businesses can
+                        use data to support better decisions.
+                    </p>
 
-                <p>
-                    We combine creativity with technology to develop
-                    digital experiences that are simple, engaging,
-                    professional, and easy to use.
-                </p>
-
-            </div>
-
-
-            <div class="reason">
-
-                <h3>Reliable Service</h3>
-
-                <p>
-                    We focus on clear communication, dependable service,
-                    and practical solutions that help businesses move
-                    forward with confidence.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECTS -->
-
-    <section class="section projects" id="projects">
-
-        <h2>Projects</h2>
-
-        <p class="section-intro">
-            Explore examples of digital solution concepts.
-        </p>
-
-        <div class="services">
-
-            <div class="service-card">
-
-                <span class="project-tag">Web Development</span>
-
-                <h3>Business Website</h3>
-
-                <p>
-                    A professional website concept designed to give a
-                    business a strong online presence, clearly present
-                    its services, and make it easy for customers to get
-                    in touch.
-                </p>
+                </div>
 
             </div>
 
 
-            <div class="service-card">
+            <!-- DATA PROJECT 2 -->
 
-                <span class="project-tag">AI & Automation</span>
+            <div class="portfolio-card">
 
-                <h3>AI Automation</h3>
+                <div class="portfolio-img">
 
-                <p>
-                    A demonstration concept showing how AI and automation
-                    can help businesses reduce repetitive tasks, improve
-                    workflows, and work more efficiently.
-                </p>
+                    <img
+                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
+                        alt="Business data analytics dashboard"
+                    >
 
-            </div>
+                </div>
 
+                <div class="portfolio-content">
 
-            <div class="service-card">
+                    <span class="badge green">
+                        PRACTICE PROJECT
+                    </span>
 
-                <span class="project-tag">Data Analytics</span>
+                    <h3>
+                        Customer Support Data Analysis
+                    </h3>
 
-                <h3>Data Dashboard</h3>
+                    <p>
+                        <strong>Problem Statement:</strong>
+                        A business receives different types of customer
+                        enquiries but needs a clearer way to organize and
+                        understand common customer issues.
+                    </p>
 
-                <p>
-                    A demonstration dashboard concept designed to turn
-                    business data into clear visual insights, helping
-                    users understand performance and make informed decisions.
-                </p>
+                    <p>
+                        <strong>Project Overview:</strong>
+                        Customer-support records were organized into
+                        categories so that common enquiry types and service
+                        patterns could be identified.
+                    </p>
 
-            </div>
+                    <div class="portfolio-meta">
+                        <strong>Tools:</strong>
+                        Excel, Google Sheets, Data Cleaning,
+                        COUNTIF and Basic Data Analysis
+                    </div>
 
-        </div>
+                    <p>
+                        <strong>Key Insight:</strong>
+                        Categorizing customer enquiries makes it easier to
+                        identify recurring issues and understand where
+                        service improvements may be needed.
+                    </p>
 
-    </section>
-
-
-    <!-- FAQ -->
-
-    <section class="section faq">
-
-        <h2>Frequently Asked Questions</h2>
-
-        <p class="section-intro">
-            Here are answers to some common questions about NovaTech Solutions.
-        </p>
-
-        <div class="faq-container">
-
-            <div class="faq-item">
-
-                <h3>What services does NovaTech Solutions offer?</h3>
-
-                <p>
-                    We offer web design, AI solutions, data services,
-                    and practical digital solutions for modern businesses.
-                </p>
+                </div>
 
             </div>
 
 
-            <div class="faq-item">
+            <!-- DATA PROJECT 3 -->
 
-                <h3>Can NovaTech work with businesses remotely?</h3>
+            <div class="portfolio-card">
 
-                <p>
-                    Yes. Our website is designed to serve businesses
-                    and clients regardless of their location.
-                </p>
+                <div class="portfolio-img">
 
-            </div>
+                    <img
+                        src="https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=900&q=80"
+                        alt="Excel data reporting and analysis"
+                    >
 
+                </div>
 
-            <div class="faq-item">
+                <div class="portfolio-content">
 
-                <h3>How can I start a project?</h3>
+                    <span class="badge orange">
+                        PRACTICE PROJECT
+                    </span>
 
-                <p>
-                    You can use our contact form to tell us about your
-                    needs, project idea, or business goals.
-                </p>
+                    <h3>
+                        Business Data Reporting
+                    </h3>
 
-            </div>
+                    <p>
+                        <strong>Problem Statement:</strong>
+                        Raw business information can be difficult to
+                        understand when it is not organized into a clear
+                        report.
+                    </p>
 
+                    <p>
+                        <strong>Project Overview:</strong>
+                        Data was structured into tables and summarized to
+                        demonstrate how raw information can be transformed
+                        into an easy-to-read business report.
+                    </p>
 
-            <div class="faq-item">
+                    <div class="portfolio-meta">
+                        <strong>Tools:</strong>
+                        Microsoft Excel, Tables, Sorting, Filtering,
+                        Formulas and Charts
+                    </div>
 
-                <h3>How can I contact NovaTech Solutions?</h3>
+                    <p>
+                        <strong>Key Insight:</strong>
+                        Well-organized reports make important information
+                        easier to understand and communicate.
+                    </p>
 
-                <p>
-                    You can send us a message through the contact form
-                    on this website.
-                </p>
+                </div>
 
             </div>
 
         </div>
 
-    </section>
+
+        <!-- TRADING & COACHING -->
+
+        <h3 class="category-title">
+            3. Trading & Coaching
+        </h3>
+
+        <div class="portfolio-grid">
 
 
-    <!-- CALL TO ACTION -->
+            <!-- TRADING PROJECT -->
 
-    <section class="cta">
+            <div class="portfolio-card">
 
-        <h2>Ready to Grow Your Business?</h2>
+                <div class="portfolio-img">
 
-        <p>
-            Let's build a smarter digital future for your business.
-        </p>
+                    <img
+                        src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=80"
+                        alt="Trading chart analysis"
+                    >
 
-        <a href="#contact" class="cta-button">
-            Start a Project
-        </a>
+                </div>
+
+                <div class="portfolio-content">
+
+                    <span class="badge">
+                        TRADING EDUCATION
+                    </span>
+
+                    <h3>
+                        Market Analysis & Trade Breakdown
+                    </h3>
+
+                    <p>
+                        Educational trading content focused on
+                        understanding market structure, identifying
+                        potential setups and explaining the reasoning
+                        behind a trade idea.
+                    </p>
+
+                    <div class="portfolio-meta">
+
+                        <strong>Topics:</strong>
+                        Market Structure, Support & Resistance,
+                        Risk Management, Trade Planning
+
+                    </div>
+
+                    <p>
+                        <strong>Approach:</strong>
+                        Each setup is explained step by step so beginners
+                        can understand the analysis instead of simply
+                        following a signal.
+                    </p>
+
+                    <p class="portfolio-meta">
+                        <strong>Note:</strong>
+                        Educational content only. Trading involves
+                        financial risk and no profit is guaranteed.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- SIGNAL PROJECT -->
+
+            <div class="portfolio-card">
+
+                <div class="portfolio-img">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1642790106117-e829e14a795f?auto=format&fit=crop&w=900&q=80"
+                        alt="Financial trading chart"
+                    >
+
+                </div>
+
+                <div class="portfolio-content">
+
+                    <span class="badge orange">
+                        SIGNAL BREAKDOWN
+                    </span>
+
+                    <h3>
+                        Trading Signal Analysis
+                    </h3>
+
+                    <p>
+                        Sample educational breakdown showing how a
+                        potential trade setup can be analyzed before
+                        entering the market.
+                    </p>
+
+                    <div class="portfolio-meta">
+
+                        <strong>Analysis Includes:</strong>
+                        Entry Area, Stop Loss, Take Profit,
+                        Risk-to-Reward and Market Structure
+
+                    </div>
+
+                    <p>
+                        <strong>Purpose:</strong>
+                        To demonstrate the process used when studying a
+                        potential market setup rather than encouraging
+                        blind signal copying.
+                    </p>
+
+                    <p class="portfolio-meta">
+
+                        <strong>Risk Notice:</strong>
+                        Examples are for educational purposes and are not
+                        financial advice or a guarantee of trading results.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- COACHING -->
+
+            <div class="portfolio-card">
+
+                <div class="portfolio-img">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=900&q=80"
+                        alt="Trading coaching and education"
+                    >
+
+                </div>
+
+                <div class="portfolio-content">
+
+                    <span class="badge purple">
+                        COACHING
+                    </span>
+
+                    <h3>
+                        Beginner Trading Coaching
+                    </h3>
+
+                    <p>
+                        Beginner-friendly coaching designed to introduce
+                        students to the fundamentals of financial-market
+                        analysis.
+                    </p>
+
+                    <div class="portfolio-meta">
+
+                        <strong>Topics Covered:</strong><br>
+
+                        • Understanding Charts<br>
+                        • Market Structure<br>
+                        • Support & Resistance<br>
+                        • Risk Management<br>
+                        • Trading Psychology<br>
+                        • Creating a Trading Plan
+
+                    </div>
+
+                    <p>
+                        <strong>Learning Goal:</strong>
+                        Help beginners understand the fundamentals and
+                        develop a structured approach to studying the
+                        markets.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- DIGITAL SOLUTIONS -->
+
+        <h3 class="category-title">
+            4. Digital Solutions
+        </h3>
+
+        <div class="portfolio-grid">
+
+
+            <!-- DIGITAL SOLUTION 1 -->
+
+            <div class="portfolio-card">
+
+                <div class="portfolio-img">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80"
+                        alt="Business digital solution"
+                    >
+
+                </div>
+
+                <div class="portfolio-content">
+
+                    <span class="badge green">
+                        DIGITAL SOLUTION
+                    </span>
+
+                    <h3>
+                        Business Online Presence
+                    </h3>
+
+                    <p>
+                        <strong>Problem:</strong>
+                        Many small businesses struggle to present their
+                        services professionally online and make it easy
+                        for potential customers to find them.
+                    </p>
+
+                    <p>
+                        <strong>Solution:</strong>
+                        NovaTech can create a professional, mobile-friendly
+                        website that presents the business, services,
+                        projects and contact information in one place.
+                    </p>
+
+                    <div class="portfolio-meta">
+
+                        <strong>Tools:</strong>
+                        HTML5, CSS3, Responsive Design,
+                        GitHub Pages and Google Search Console
+
+                    </div>
+
+                    <p>
+                        <strong>Outcome:</strong>
+                        A professional digital presence that customers can
+                        access from phones, tablets and computers.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- DIGITAL SOLUTION 2 -->
+
+            <div class="portfolio-card">
+
+                <div class="portfolio-img">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80"
+                        alt="Digital customer communication solution"
+                    >
+
+                </div>
+
+                <div class="portfolio-content">
+
+                    <span class="badge purple">
+                        DIGITAL SOLUTION
+                    </span>
+
+                    <h3>
+                        Customer Communication Setup
+                    </h3>
+
+                    <p>
+                        <strong>Problem:</strong>
+                        Businesses can lose potential customers when there
+                        is no simple and organized way for visitors to make
+                        enquiries.
+                    </p>
+
+                    <p>
+                        <strong>Solution:</strong>
+                        Create a clear contact system that connects the
+                        website visitor to the business through a
+                        professional contact form and other communication
+                        channels.
+                    </p>
+
+                    <div class="portfolio-meta">
+
+                        <strong>Tools:</strong>
+                        HTML Forms, Formspree, Email Integration
+                        and Responsive Web Design
+
+                    </div>
+
+                    <p>
+                        <strong>Outcome:</strong>
+                        A simpler process for customers to send enquiries
+                        directly from the business website.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- DIGITAL SOLUTION 3 -->
+
+            <div class="portfolio-card">
+
+                <div class="portfolio-img">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
+                        alt="Business data organization solution"
+                    >
+
+                </div>
+
+                <div class="portfolio-content">
+
+                    <span class="badge orange">
+                        DIGITAL SOLUTION
+                    </span>
+
+                    <h3>
+                        Business Data Organization
+                    </h3>
+
+                    <p>
+                        <strong>Problem:</strong>
+                        Important business information can become difficult
+                        to manage when it is stored without proper
+                        organization.
+                    </p>
+
+                    <p>
+                        <strong>Solution:</strong>
+                        Organize business information using structured
+                        spreadsheets, tables, formulas and simple reports.
+                    </p>
+
+                    <div class="portfolio-meta">
+
+                        <strong>Tools:</strong>
+                        Microsoft Excel, Google Sheets, Tables,
+                        Formulas, Sorting and Filtering
+
+                    </div>
+
+                    <p>
+                        <strong>Outcome:</strong>
+                        Information becomes easier to organize, search,
+                        analyze and present for business
+                        decision-making.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- DIGITAL SOLUTION 4 -->
+
+            <div class="portfolio-card">
+
+                <div class="portfolio-img">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=80"
+                        alt="Business automation and digital workflow"
+                    >
+
+                </div>
+
+                <div class="portfolio-content">
+
+                    <span class="badge">
+                        DIGITAL SOLUTION
+                    </span>
+
+                    <h3>
+                        Digital Workflow Improvement
+                    </h3>
+
+                    <p>
+                        <strong>Problem:</strong>
+                        Repetitive manual tasks can make everyday business
+                        activities slower and harder to manage.
+                    </p>
+
+                    <p>
+                        <strong>Solution:</strong>
+                        Identify repetitive processes and introduce simple
+                        digital tools, structured forms, spreadsheets and
+                        automation where appropriate.
+                    </p>
+
+                    <div class="portfolio-meta">
+
+                        <strong>Tools:</strong>
+                        Google Forms, Google Sheets, Excel,
+                        Formulas and AI-assisted workflows
+
+                    </div>
+
+                    <p>
+                        <strong>Outcome:</strong>
+                        A more organized workflow designed to reduce
+                        unnecessary manual work and make information
+                        easier to manage.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 
 
     <!-- CONTACT -->
 
-    <section class="section contact" id="contact">
+    <section class="section" id="contact">
 
-        <h2>Let's Work Together</h2>
+        <h2>
+            Let's Work Together
+        </h2>
 
-        <p class="section-intro">
-            Have a project in mind?
-            Tell us what you need, and we'll review your message
-            and get back to you.
+        <p>
+            Ready to take your business to the next level?
+            Contact NovaTech Solutions today.
         </p>
 
+        <br>
 
-        <form action="https://formspree.io/f/xjyvnrnp"
-              method="POST"
-              class="contact-form">
-
-            <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                required
-            >
-
-            <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                required
-            >
-
-            <textarea
-                name="message"
-                placeholder="Your Message"
-                rows="6"
-                required
-            ></textarea>
-
-            <button type="submit" class="contact-button">
-                Send Message
-            </button>
-
-        </form>
-
-
-        <div class="business-info">
-
-            <h3>Business Information</h3>
-
-            <p>
-                <strong>Business Name:</strong>
-                NovaTech Solutions
-            </p>
-
-            <p>
-                <strong>Service Area:</strong>
-                Available Worldwide
-            </p>
-
-            <p>
-                <strong>Email:</strong>
-                Contact us through our online form
-            </p>
-
-        </div>
+        <a
+            href="mailto:ikennaiduh206@outlook.com"
+            class="button"
+            style="background:#2563eb;color:white"
+        >
+            Contact Us
+        </a>
 
     </section>
 
@@ -981,15 +1162,9 @@
     <footer>
 
         <p>
-            <strong>NovaTech Solutions</strong>
-        </p>
-
-        <p>
-            Digital Innovation. Smarter Solutions. Business Growth.
-        </p>
-
-        <p>
-            © 2026 NovaTech Solutions. All rights reserved.
+            © 2026 NovaTech Solutions.
+            All rights reserved.
+            | Built with honesty, skill and growth mindset.
         </p>
 
     </footer>
