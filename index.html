@@ -4,41 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NovaTech Solutions - Official Website</title>
+    <title>NovaTech Solutions | Digital Solutions for Modern Businesses</title>
+
+    <meta name="description" content="NovaTech Solutions provides professional web design, AI solutions, and data services for modern businesses.">
 
     <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f7fa;
-            color: #1f2937;
+            background: #f8fafc;
+            color: #1e293b;
             line-height: 1.6;
         }
 
+        /* HEADER */
+
         header {
-            background-color: #111827;
+            background: #0f172a;
             color: white;
-            padding: 20px 8%;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         .logo {
-            font-size: 28px;
+            font-size: 25px;
             font-weight: bold;
-        }
-
-        nav {
-            margin-top: 15px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin-right: 20px;
+            margin-left: 25px;
             font-weight: bold;
         }
 
@@ -46,92 +56,210 @@
             color: #60a5fa;
         }
 
+        /* HERO */
+
         .hero {
-            background-color: #2563eb;
+            background: linear-gradient(135deg, #1d4ed8, #2563eb);
             color: white;
             text-align: center;
-            padding: 90px 20px;
+            padding: 110px 20px;
         }
 
         .hero h1 {
-            font-size: 48px;
+            font-size: 52px;
+            max-width: 900px;
+            margin: auto;
             margin-bottom: 20px;
         }
 
         .hero p {
             font-size: 20px;
-            max-width: 700px;
-            margin: 0 auto 30px;
+            max-width: 750px;
+            margin: auto;
+            margin-bottom: 35px;
         }
 
         .button {
             display: inline-block;
-            background-color: white;
-            color: #2563eb;
-            padding: 14px 28px;
+            background: white;
+            color: #1d4ed8;
+            padding: 15px 30px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
         }
 
         .button:hover {
-            background-color: #e5e7eb;
+            background: #e2e8f0;
         }
 
+        /* GENERAL SECTIONS */
+
         .section {
-            padding: 70px 8%;
+            padding: 80px 7%;
             text-align: center;
         }
 
         .section h2 {
-            font-size: 34px;
-            margin-bottom: 20px;
-            color: #111827;
+            font-size: 36px;
+            color: #0f172a;
+            margin-bottom: 18px;
         }
 
-        .section p {
+        .section-intro {
             max-width: 750px;
-            margin: 0 auto;
+            margin: auto;
             font-size: 18px;
+            color: #475569;
         }
+
+        /* ABOUT */
+
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            max-width: 850px;
+            margin: 35px auto 0;
+            font-size: 18px;
+            color: #475569;
+        }
+
+        /* SERVICES */
 
         .services {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
+            flex-wrap: wrap;
             gap: 25px;
-            margin-top: 40px;
+            margin-top: 45px;
         }
 
         .service-card {
-            background-color: white;
-            padding: 30px;
-            border-radius: 12px;
-            width: 280px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            background: white;
+            width: 300px;
+            padding: 35px 25px;
+            border-radius: 14px;
+            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .service-icon {
+            font-size: 42px;
+            margin-bottom: 15px;
         }
 
         .service-card h3 {
-            color: #2563eb;
+            font-size: 22px;
+            color: #1d4ed8;
             margin-bottom: 12px;
         }
 
-        footer {
-            background-color: #111827;
-            color: white;
-            text-align: center;
-            padding: 30px;
-            margin-top: 30px;
+        .service-card p {
+            color: #64748b;
         }
 
+        /* WHY US */
+
+        .why-us {
+            background: #eff6ff;
+        }
+
+        .reasons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 45px;
+        }
+
+        .reason {
+            background: white;
+            width: 280px;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .reason h3 {
+            margin-bottom: 10px;
+            color: #0f172a;
+        }
+
+        .reason p {
+            color: #64748b;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            background: white;
+        }
+
+        .contact-button {
+            display: inline-block;
+            margin-top: 30px;
+            background: #2563eb;
+            color: white;
+            padding: 15px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-button:hover {
+            background: #1d4ed8;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        footer p {
+            margin: 6px 0;
+        }
+
+        /* MOBILE */
+
         @media (max-width: 700px) {
-            .hero h1 {
-                font-size: 36px;
+
+            header {
+                flex-direction: column;
+                gap: 15px;
             }
 
             nav a {
-                display: inline-block;
-                margin-bottom: 10px;
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .hero {
+                padding: 80px 20px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .section {
+                padding: 60px 20px;
+            }
+
+            .section h2 {
+                font-size: 30px;
             }
         }
     </style>
@@ -139,81 +267,248 @@
 
 <body>
 
+    <!-- HEADER -->
+
     <header>
-        <div class="logo">NovaTech Solutions</div>
+
+        <div class="logo">
+            NovaTech Solutions
+        </div>
 
         <nav>
-            <a href="index.html">Home</a>
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
         </nav>
+
     </header>
 
-    <section class="hero">
-        <h1>Powering Businesses With Digital Solutions</h1>
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+
+        <h1>
+            Powering Businesses With Digital Solutions
+        </h1>
 
         <p>
             We help modern businesses grow through professional websites,
-            digital solutions, AI technology, and data services.
+            AI technology, digital solutions, and data services.
         </p>
 
-        <a href="#services" class="button">Explore Our Services</a>
+        <a href="#services" class="button">
+            Explore Our Services
+        </a>
+
     </section>
 
-    <section class="section" id="about">
-        <h2>About NovaTech Solutions</h2>
 
-        <p>
-            NovaTech Solutions is a modern digital company focused on helping
-            businesses use technology to improve their online presence,
-            productivity, and customer experience.
+    <!-- ABOUT -->
+
+    <section class="section about" id="about">
+
+        <h2>
+            About NovaTech Solutions
+        </h2>
+
+        <p class="section-intro">
+            We are a modern digital solutions company helping businesses
+            use technology to improve their online presence, productivity,
+            and customer experience.
         </p>
+
+        <div class="about-content">
+
+            <p>
+                At NovaTech Solutions, we believe technology should make
+                business simpler, smarter, and more effective. Our goal is
+                to provide practical digital solutions that help businesses
+                establish a strong online presence and work more efficiently.
+            </p>
+
+        </div>
+
     </section>
+
+
+    <!-- SERVICES -->
 
     <section class="section" id="services">
-        <h2>Our Services</h2>
+
+        <h2>
+            Our Services
+        </h2>
+
+        <p class="section-intro">
+            Digital services designed to help businesses grow and operate
+            more efficiently.
+        </p>
+
 
         <div class="services">
 
-            <div class="service-card">
-                <h3>Web Design</h3>
-                <p>
-                    Professional and responsive websites designed for
-                    businesses and organizations.
-                </p>
-            </div>
 
             <div class="service-card">
-                <h3>AI Solutions</h3>
+
+                <div class="service-icon">
+                    💻
+                </div>
+
+                <h3>
+                    Web Design
+                </h3>
+
                 <p>
-                    Practical AI and automation solutions that help businesses
-                    work smarter.
+                    Professional, modern, and responsive websites designed
+                    for businesses and organizations.
                 </p>
+
             </div>
 
+
             <div class="service-card">
-                <h3>Data Services</h3>
+
+                <div class="service-icon">
+                    🤖
+                </div>
+
+                <h3>
+                    AI Solutions
+                </h3>
+
                 <p>
-                    Data organization, Excel solutions, reports, and
+                    Practical AI and automation solutions designed to help
+                    businesses work smarter.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📊
+                </div>
+
+                <h3>
+                    Data Services
+                </h3>
+
+                <p>
+                    Excel solutions, data organization, reports, and useful
                     business insights.
                 </p>
+
             </div>
 
+
         </div>
+
     </section>
 
-    <section class="section" id="contact">
-        <h2>Let's Work Together</h2>
 
-        <p>
-            Ready to take your business to the next level?
-            Contact NovaTech Solutions today.
+    <!-- WHY CHOOSE US -->
+
+    <section class="section why-us">
+
+        <h2>
+            Why Work With Us?
+        </h2>
+
+        <p class="section-intro">
+            We focus on practical digital solutions that help businesses
+            build a stronger online presence.
         </p>
+
+
+        <div class="reasons">
+
+
+            <div class="reason">
+
+                <h3>
+                    Modern Solutions
+                </h3>
+
+                <p>
+                    We use modern digital tools and technologies to create
+                    useful business solutions.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <h3>
+                    Business Focused
+                </h3>
+
+                <p>
+                    Our solutions are designed around real business needs
+                    and customer experiences.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <h3>
+                    Professional Approach
+                </h3>
+
+                <p>
+                    We aim to deliver clean, reliable, and professional
+                    digital experiences.
+                </p>
+
+            </div>
+
+
+        </div>
+
     </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="section contact" id="contact">
+
+        <h2>
+            Let's Work Together
+        </h2>
+
+        <p class="section-intro">
+            Ready to take your business to the next level?
+            Get in touch with NovaTech Solutions today.
+        </p>
+
+        <a href="mailto:contact@novatechsolutions.com" class="contact-button">
+            Contact Us
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
 
     <footer>
-        <p>© 2026 NovaTech Solutions. All rights reserved.</p>
+
+        <p>
+            <strong>NovaTech Solutions</strong>
+        </p>
+
+        <p>
+            Digital solutions for modern businesses.
+        </p>
+
+        <p>
+            © 2026 NovaTech Solutions. All rights reserved.
+        </p>
+
     </footer>
 
 </body>
